@@ -31,25 +31,30 @@ public class ContactMain01 {
 				System.out.println("연락처 등록 메뉴");
 				System.out.println("-----------");
 				System.out.println("이름 입력>");
-
 				String name = sc.next();
-				c1.setName(name);
+				
+
 				System.out.println("전화번호 입력>");
 				String phone = sc.next();
 				c1.setPhone(phone);
+				
 				System.out.println("이메일 입력>");
 				String email = sc.next();
 				c1.setEmail(email);
+				
 				System.out.println("연락처 등록 완료!");
 				contactList[count] = c1;
+				
 				count++;
 				break;
+				
+			  	
 				
 			case MENU_SELECT_ALL:
 
 				System.out.println("연락처 개수 : " + count);
 				for(int i=0; i < count; i++) {
-					System.out.println(contactList[i]);
+					System.out.println(contactList[i].toString());
 				}
 			
 				break;

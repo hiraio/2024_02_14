@@ -3,10 +3,11 @@ package edu.java.contact01;
 // 데이터 클래스(이름, 전화번호, 이메일)
 public class Contact {
 	// 멤버 변수
-
+	// 웬만해서는 private를 사용한다
 	private String name;
 	private String phone;
 	private String email;
+	
 	// 기본 생성자
 	public Contact() {
 		
@@ -46,7 +47,7 @@ public class Contact {
 	}
 
 	// toString()
-	public String toString() {
+	public String toString(String name, String phone, String email) {
 		return "Contact [ name=" + name + ", phone=" + phone + ", email=" + email + "]";
 	}
 	
